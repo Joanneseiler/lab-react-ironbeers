@@ -7,6 +7,7 @@ import SingleBeer from './components/SingleBeer';
 import RandomBeer from './components/RandomBeer';
 import NewBeer from './components/NewBeer';
 
+
 function App() {
   return (
     <div>
