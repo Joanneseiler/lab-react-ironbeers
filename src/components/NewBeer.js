@@ -24,7 +24,7 @@ export default function NewBeer() {
             }
 
             await axios.post("https://ih-beers-api2.herokuapp.com/beers/new", newBeer)
-            navigate("/")
+            navigate("/beers")
 
         }
         catch(error) {
