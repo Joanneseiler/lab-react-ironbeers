@@ -24,7 +24,7 @@ export default function AllBeers() {
 
 
     if (!beers.length) {
-        return <h1>Loading ...</h1>
+        return <h1>Loading...</h1>
     }
 
     return (

@@ -8,7 +8,7 @@ export default function Beer() {
 
     const {id} = useParams()
 
-    const [beer, setBeer] = useState([]); 
+    const [beer, setBeer] = useState(null); 
         
     useEffect(() => {
         const getBeerData = async () => {
@@ -25,14 +25,14 @@ export default function Beer() {
     }, [id])
     
     if (!beer) {
-        return <h1>Loading ...</h1>
+        return <h1>Loading...</h1>
     }
 
 
     return (
         <div>
-           <Header/>
-           <BeerDetails beer={beer}/>
+            <Header/>
+            <BeerDetails beer={beer}/>
         </div>
     )
 }
