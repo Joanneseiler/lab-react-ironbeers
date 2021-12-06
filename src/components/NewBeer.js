@@ -2,8 +2,11 @@ import React from 'react'
 import Header from './Header'
 import axios from 'axios';
 import AddBeerForm from './AddBeerForm';
+import {useNavigate} from 'react-router-dom';
 
 export default function NewBeer() {
+
+    const navigate = useNavigate()
 
     const addNewBeer = async (event) => {
         event.preventDefault();
@@ -21,7 +24,7 @@ export default function NewBeer() {
             }
 
             await axios.post("https://ih-beers-api2.herokuapp.com/beers/new", newBeer)
-            console.log(newBeer)
+            navigate("/")
 
         }
         catch(error) {
