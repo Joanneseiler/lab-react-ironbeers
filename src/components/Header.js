@@ -6,7 +6,7 @@ export default function Header() {
         <div>
             <Link to="/">
             <div>
-                <img src="./images/home.png" alt="home" />
+                <img style={{width: "100%"}} src="./images/home.png" alt="home"/>
             </div>
         </Link>
         </div>
