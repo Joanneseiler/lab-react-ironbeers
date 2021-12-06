@@ -24,7 +24,7 @@ export default function AllBeers() {
         throw new Error("Failed to get all beers", error);
     }
 }
-    const handleSearch = async (event) => {
+    const handleSearch = (event) => {
         setSearchBeer(event.target.value);
         searchBeer ? fetchSearchedBeer() : getAllBeersData() 
     }
